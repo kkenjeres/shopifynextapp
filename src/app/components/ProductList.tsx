@@ -25,7 +25,7 @@ const ProductList = () => {
   return (
     <section className="w-[80%] m-auto">
       {products.map((product) => (
-        <ProductCard key={product.id} product={product} />
+        <ProductCard key={product} product={product} />
       ))}
     </section>
   );
