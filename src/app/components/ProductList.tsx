@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import ProductCard from "./ProductCard";
-
 const ProductList = () => {
   const [products, setProducts] = useState([]);
 
@@ -13,6 +12,7 @@ const ProductList = () => {
         "Content-Type": "application/json",
       },
     });
+    console.log(response);
     const data = await response.json();
     // Предполагаем, что структура данных соответствует ожиданиям
     setProducts(data);
